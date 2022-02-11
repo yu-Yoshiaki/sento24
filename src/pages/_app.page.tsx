@@ -14,7 +14,7 @@ const App = (props: CustomAppProps) => {
   return (
     <>
       <Head>
-        <title>nexst</title>
+        <title>SENTO24</title>
       </Head>
       {getLayout(<props.Component {...props.pageProps} />)}
     </>

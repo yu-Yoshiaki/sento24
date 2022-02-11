@@ -23,9 +23,13 @@ export const Header: VFC = () => {
   };
 
   return (
-    <header>
-      <h1 className="py-4 text-4xl font-bold text-center bg-white border-b">Title</h1>
-      <div className={`flex justify-between items-center px-3 ${isEnabled ? "bg-black text-white" : "bg-white"}`}>
+    <header className="h-16">
+      <h1 className="fixed py-4 px-5 w-full text-4xl font-bold bg-[rgb(0,0,0,0)]">SENTO24</h1>
+      <div
+        className={`hidden md:block flex justify-between items-center px-3 ${
+          isEnabled ? "bg-black text-white" : "bg-white"
+        }`}
+      >
         <nav className="py-2 ">
           {items.map(({ href, label, icon }) => {
             return (

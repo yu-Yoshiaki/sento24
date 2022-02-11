@@ -1,11 +1,13 @@
 import type { CustomNextPage } from "next";
 import { BlogLayout } from "src/layout/BlogLayout";
+import { About, Pickup, Recommend } from "src/pages/root/layout";
 
 const Root: CustomNextPage = () => {
   return (
     <div>
-      <h2>Root</h2>
-      <button className="p-2">Click me!　更新</button>
+      <Pickup />
+      <Recommend />
+      <About />
     </div>
   );
 };
